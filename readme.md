@@ -58,4 +58,4 @@ Bu proje, bir CRM (Müşteri İlişkileri Yönetimi) sistemini optimize etmek i�
 1. Müşteri temsilcileri ve müşteriler arasındaki optimal eşleşmeler.
 2. Seçilen pazarlama kampanyaları ve bunların beklenen getirileri.
 3. Algoritmaların zaman ve alan karmaşıklığı analizi.
-4. Performans grafikleri ve ölçümleri.
+
