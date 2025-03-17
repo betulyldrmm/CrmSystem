@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Optimizasyon Sistemi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CRM Optimizasyon Sistemi</h1>
+        </header>
+        
+        <main>
+            <section class="panel">
+                <h2>Müşteri Destek Temsilcisi Yönlendirme</h2>
+                <div class="results">
+                    <h3>Atama Sonuçları</h3>
+                    <ul id="assignments-list"></ul>
+                </div>
+                <div class="visualization">
+                    <h3>Performans Analizi</h3>
+                    <canvas id="assignment-chart"></canvas>
+                </div>
+            </section>
+            
+            <section class="panel">
+                <h2>Pazarlama Kampanyası Seçimi</h2>
+                <div class="results">
+                    <h3>Kampanya Sonuçları</h3>
+                    <div class="summary">
+                        <p>Toplam Bütçe: <span id="total-budget"></span></p>
+                        <p>Toplam Beklenen Getiri (ROI): <span id="total-roi"></span></p>
+                        <p>Kalan Bütçe: <span id="remaining-budget"></span></p>
+                    </div>
+                    <ul id="campaigns-list"></ul>
+                </div>
+                <div class="visualization">
+                    <h3>Performans Analizi</h3>
+                    <canvas id="knapsack-chart"></canvas>
+                </div>
+            </section>
+            
+            <section class="panel">
+                <h2>Algoritmik Kompleksite Analizi</h2>
+                <div class="complexity">
+                    <h3>Müşteri Temsilcisi Atama (Macar Algoritması)</h3>
+                    <p>Zaman Karmaşıklığı: O(n³)</p>
+                    <p>Alan Karmaşıklığı: O(n²)</p>
+                    <p>Adım adım hesaplama:</p>
+                    <ol>
+                        <li>Satır ve sütun indirgeme: O(n²)</li>
+                        <li>Sıfır elemanlarını bulma: O(n²)</li>
+                        <li>Minimum çizgi sayısını bulma: O(n²)</li>
+                        <li>Eşleşmeyi bulma: O(n³)</li>
+                    </ol>
+                </div>
+                <div class="complexity">
+                    <h3>Pazarlama Kampanyası Seçimi (Sırt Çantası Problemi)</h3>
+                    <p>Zaman Karmaşıklığı: O(n*W) - n: kampanya sayısı, W: toplam bütçe</p>
+                    <p>Alan Karmaşıklığı: O(n*W)</p>
+                    <p>Adım adım hesaplama:</p>
+                    <ol>
+                        <li>DP tablosunu başlatma: O(n*W)</li>
+                        <li>Optimal alt yapıyı hesaplama: O(n*W)</li>
+                        <li>Seçilen kampanyaları geri takip etme: O(n)</li>
+                    </ol>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>CRM Optimizasyon Sistemi &copy; 2025</p>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="crmsystem.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
