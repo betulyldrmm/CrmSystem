@@ -104,26 +104,3 @@ function displayPerformanceResults(sizes, assignmentTimes, knapsackTimes) {
     console.log("- Alan Karmaşıklığı: O(n*W)");
 }
 
-// Basit grafik çizimi için fonksiyon
-function drawChart(canvasId, labels, data, title) {
-    const ctx = document.getElementById(canvasId).getContext('2d');
-    new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: labels,
-            datasets: [{
-                label: title,
-                data: data,
-                borderColor: 'rgb(75, 192, 192)',
-                tension: 0.1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
-}
